@@ -1,0 +1,118 @@
+body {
+  text-align: center;
+
+  background-color: #283149;
+}
+
+.container-fluid {
+  background-image: url(./images/drum4.jpg);
+}
+
+h1 {
+  color: #0c674e;
+  text-shadow: 3px 0 #2cc1bd;
+
+  font-family: 'Lobster Two', cursive;
+  font-size: 5rem;
+
+}
+
+#title {
+  text-align: center;
+
+  font-family: 'Lobster Two', cursive;
+}
+
+footer {
+  color: #33a688;
+
+  font-family: sans-serif;
+}
+
+.right {
+  margin-bottom: 100px;
+
+  text-align: center;
+
+  color: #2c9582;
+
+  font-family: 'Lobster Two', cursive;
+}
+
+.a {
+  background-image: url(./images/tom1.png);
+  background-repeat: no-repeat;
+}
+
+.b {
+  background-image: url(./images/tom2.png);
+  background-repeat: no-repeat;
+}
+
+.c {
+  background-image: url(./images/tom3.png);
+  background-repeat: no-repeat;
+}
+
+.d {
+  background-image: url(./images/tom4.png);
+  background-repeat: no-repeat;
+}
+
+.e {
+  background-image: url(./images/snare.png);
+  background-repeat: no-repeat;
+}
+
+.f {
+  background-image: url(./images/crash.png);
+  background-repeat: no-repeat;
+}
+
+.g {
+  background-image: url(./images/kick.png);
+  background-repeat: no-repeat;
+}
+
+.set {
+  margin: 10% auto;
+  padding: 15% auto;
+}
+
+.game-over {
+  opacity: 0.8;
+  background-color: red;
+}
+
+.pressed {
+  opacity: 0.3;
+  box-shadow: 0 5px 5px 0 #DBEDF3;
+}
+
+.hidden {
+  color: #de0808;
+
+  font-family: fantasy;
+}
+
+.drum {
+  display: inline-grid;
+
+  width: 175px;
+  height: 175px;
+  margin: 15px;
+
+  text-align: center;
+
+  color: #09ad80;
+  border: 15px solid #404B69;
+  border-radius: 15px;
+  outline: none;
+  background-color: white;
+  text-shadow: 3px 0 #DBEDF3;
+
+  font-family: 'Lobster Two', cursive;
+  font-size: 5rem;
+  font-weight: 750;
+  line-height: auto;
+}

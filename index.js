@@ -1,24 +1,20 @@
 alert("Hello Drum Kit Website");
 
-var noButtons=document.querySelectorAll(".drum").length;
-var a=0;
 
 //Detecting button press
 
-while (a<noButtons)
+
+$(".drum").click(function()
 {
-  document.querySelectorAll(".drum")[a].addEventListener("click", function()
-  {
-    var x = this.innerHTML;
-    makeSound(x);
-    btnAnimation(x);
-  });
-  a++;
-}
+  var x = this.innerHTML;
+  makeSound(x);
+  btnAnimation(x);
+});
+
 
 //Detecting keyboard press
 
-document.addEventListener("keypress", function(event)
+$(document).keypress(function(event)
 {
   makeSound(event.key);
   btnAnimation(event.key);
@@ -71,22 +67,21 @@ function makeSound(key){
 
 }
 
+
 function btnAnimation(currentKey)
 {
-  var activeBtn = document.querySelector("."+currentKey);
-  activeBtn.classList.add("pressed");
+  $("."+currentKey).addClass("pressed");
 
   setTimeout(function(){
-    activeBtn.classList.remove("pressed");
+    $("."+currentKey).removeClass("pressed");
   }, 50);
 }
 
-function rightAnimation() {
+function rightAnimation()
+{
+  $(".right").addClass("hidden");
 
-  document.querySelector(".right").classList.add("hidden");
   setTimeout(function(){
-    document.querySelector(".right").classList.remove("hidden");
+    $(".right").removeClass("hidden");
   }, 250);
-
-
 }

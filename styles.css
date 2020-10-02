@@ -1,7 +1,7 @@
 body {
   text-align: center;
 
-  background-color: #283149;
+  background-color: black;
 }
 
 .container-fluid {
@@ -9,8 +9,8 @@ body {
 }
 
 h1 {
-  color: #0c674e;
-  text-shadow: 3px 0 #2cc1bd;
+  color: #219874;
+  text-shadow: 1px 0 white;
 
   font-family: 'Lobster Two', cursive;
   font-size: 5rem;
@@ -79,18 +79,13 @@ footer {
   padding: 15% auto;
 }
 
-.game-over {
-  opacity: 0.8;
-  background-color: red;
-}
-
 .pressed {
   opacity: 0.3;
   box-shadow: 0 5px 5px 0 #DBEDF3;
 }
 
 .hidden {
-  color: #de0808;
+  color: #b11212;
 
   font-family: fantasy;
 }
@@ -109,7 +104,7 @@ footer {
   border-radius: 15px;
   outline: none;
   background-color: white;
-  text-shadow: 3px 0 #DBEDF3;
+  text-shadow: 1px 0 #DBEDF3;
 
   font-family: 'Lobster Two', cursive;
   font-size: 5rem;
